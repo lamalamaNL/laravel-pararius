@@ -1,0 +1,57 @@
+{
+  "name": "lamalama/laravel-pararius",
+  "description": "Pararius for Laravel",
+  "keywords": [
+    "laravel",
+    "Pararius"
+  ],
+  "homepage": "https://github.com/lamalamaNL/laravel-pararius",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Lama Lama",
+      "email": "info@lamalama.nl"
+    },
+    {
+      "name": "Mark de Vries",
+      "email": "mark@lamalama.nl"
+    }
+  ],
+  "require": {
+    "php": "^7.2.5"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^5.0",
+    "pestphp/pest": "^0.1.5",
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "LamaLama\\Pararius\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LamaLama\\Pararius\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "LamaLama\\Pararius\\ParariusServiceProvider"
+        ],
+        "aliases": {
+            "Pararius": "LamaLama\\Pararius\\ParariusFacade"
+        }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
