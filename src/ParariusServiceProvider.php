@@ -5,7 +5,7 @@ namespace LamaLama\Pararius;
 use Illuminate\Support\ServiceProvider;
 use LamaLama\Pararius\Pararius;
 
-class ParariuserviceProvider extends ServiceProvider
+class ParariusServiceProvider extends ServiceProvider
 {
     /**
      * Boot.

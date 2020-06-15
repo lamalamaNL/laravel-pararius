@@ -4,7 +4,7 @@ namespace LamaLama\Pararius;
 
 use LamaLama\Pararius\Feed;
 
-class Feed
+class Pararius
 {
     /**
      * Feed.
