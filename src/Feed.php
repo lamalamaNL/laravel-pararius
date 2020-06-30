@@ -7,13 +7,14 @@ use Spatie\ArrayToXml\ArrayToXml;
 class Feed
 {
     /**
-     * $properties
+     * $properties.
      * @var array
      */
     private $properties;
 
     /**
      * setProperties
+     * @param array $properties
      */
     public function setProperties(array $properties)
     {
@@ -27,7 +28,7 @@ class Feed
      *
      * @return void
      */
-    public function xml()
+    public function xmlResponse()
     {
         $xml = ArrayToXml::convert($this->properties, [
             'rootElementName' => 'housing',
