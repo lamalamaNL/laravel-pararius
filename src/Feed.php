@@ -15,7 +15,7 @@ class Feed
     /**
      * setProperties
      */
-    public function setProperties($properties)
+    public function setProperties(array $properties)
     {
         $this->properties = $properties;
 
@@ -29,21 +29,15 @@ class Feed
      */
     public function xml()
     {
-        $result = ArrayToXml::convert($this->properties, [
+        $xml = ArrayToXml::convert($this->properties, [
             'rootElementName' => 'housing',
             '_attributes' => [
                 'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
             ],
         ], true, 'UTF-8');
 
-        return response($result, 200, [
+        return response($xml, 200, [
             'Content-Type' => 'application/xml'
         ]);
-    }
-
-    private function example()
-    {
-
-
     }
 }
