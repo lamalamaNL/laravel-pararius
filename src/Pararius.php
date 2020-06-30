@@ -8,8 +8,7 @@ class Pararius
 {
     /**
      * Feed.
-     *
-     * @return void
+     * @return LamaLama\Pararius\Feed
      */
     public function feed()
     {

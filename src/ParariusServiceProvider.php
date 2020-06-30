@@ -20,7 +20,7 @@ class ParariusServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/pararius.php', 'osre');
+        $this->mergeConfigFrom(__DIR__.'/../config/pararius.php', 'pararius');
 
         $this->app->bind('pararius', function () {
             return new Pararius();

@@ -7,7 +7,7 @@ return [
     | API key
     |--------------------------------------------------------------------------
     |
-    | The OSRE API key
+    | The Pararius estate agent ID
     |
     */
 

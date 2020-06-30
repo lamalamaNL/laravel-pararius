@@ -18,7 +18,8 @@
     }
   ],
   "require": {
-    "php": "^7.2.5"
+    "php": "^7.2.5",
+    "spatie/array-to-xml": "^2.12"
   },
   "require-dev": {
     "orchestra/testbench": "^5.0",
